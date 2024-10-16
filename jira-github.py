@@ -3,7 +3,6 @@ import json
 from requests.auth import HTTPBasicAuth
 import requests
 
-# Creating a flask app instance
 app = Flask(__name__)
 
 
@@ -19,15 +18,14 @@ def hello():
         "Content-Type": "application/json"
     }
 
-    # Ensure your payload matches the API's required fields
     payload = json.dumps({
         "fields": {
             "summary": "Website is not loading to due a bug.",
             "issuetype": {
-                "id": "10003"  # Ensure this is the correct issue type ID
+                "id": "10003"  
             },
             "project": {
-                "key": "SCRUM"  # Ensure the project key or id is correct
+                "key": "SCRUM"  
             },
             "description": {
                 "content": [
