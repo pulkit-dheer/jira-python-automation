@@ -1,1 +1,1 @@
-# jirra-python-automation
+# jira-python-automation
